@@ -33,33 +33,15 @@ export default function Refund() {
 }
 ```
 
-✅ **Commit thay đổi**
-
 ---
 
-### **Bước 1.5: Kiểm tra/Cập nhật file `.gitignore`**
-
-Kiểm tra xem repo đã có file `.gitignore` chưa:
-- Nếu **ĐÃ CÓ**: Click Edit, thêm các dòng này vào (nếu chưa có):
+## **File: `.gitignore`**
 ```
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
-
-# next.js
-/.next/
-/out/
-
-# production
-/build
-
-# misc
+node_modules
+.next
+out
+build
 .DS_Store
 *.pem
-
-# local env files
 .env*.local
-
-# vercel
 .vercel
