@@ -119,7 +119,6 @@ export default function Home() {
         </div>
       )}
 
-      {/* Footer */}
       <div
         style={{
           marginTop: '100px',
