@@ -3,7 +3,6 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 
 export default async function handler(req, res) {
   try {
-    // 9 Price IDs của bạn
     const priceIds = [
       'price_1RhBdlADNC6v7kD3TfqBlyzB',
       'price_1SZpRTADNC6v7kD3yyjwwaQR',
@@ -15,7 +14,6 @@ export default async function handler(req, res) {
       'price_1RhBnwADNC6v7kD339sF1xTe',
     ];
 
-    // Lấy thông tin từ Stripe
     const products = await Promise.all(
       priceIds.map(async (priceId) => {
         try {
@@ -38,7 +36,6 @@ export default async function handler(req, res) {
       })
     );
 
-    // Lọc bỏ sản phẩm lỗi
     const validProducts = products.filter((p) => p !== null);
 
     res.status(200).json(validProducts);
