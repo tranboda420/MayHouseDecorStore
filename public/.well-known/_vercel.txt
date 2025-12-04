@@ -1,0 +1,1 @@
+vc-domain-verify=email.may-house-decor-store.vercel.app,e3dc1a10c7262766aa1b
